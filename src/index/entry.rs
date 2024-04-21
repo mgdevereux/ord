@@ -63,7 +63,7 @@ impl RuneEntry {
     };
 
     if let Some(start) = self.start() {
-      if height < start {
+      if height <( start -1){
         return Err(MintError::Start(start));
       }
     }
